@@ -5,12 +5,11 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath("fr.hdarritchon.sample:greeting-plugin:0.0.3-SNAPSHOT")
+        classpath("fr.hdarritchon.utils.kesve:kesve-gradle-plugin:0.0.1-SNAPSHOT")
     }
 }
 
-apply(plugin="fr.hdarritchon.sample.hello")
-apply(plugin="fr.hdarritchon.sample.goodbye")
+apply(plugin="fr.hdarritchon.utils.kesve.kesve-gradle-plugin")
 
 plugins {
     `maven-publish`
